@@ -1,0 +1,19 @@
+---
+author: Ashish
+comments: true
+date: 2007-09-12 19:27:43+00:00
+layout: post
+slug: 3-2-1-commit
+title: 3... 2... 1... COMMIT!!!
+wordpress_id: 10
+tags:
+- osc
+- rails
+- ruby
+---
+
+This past weekend, I participated with the [Open Source Connections](http://www.opensourceconnections.com) (O19s) team of Eric Pugh, Jim Nist, and Michael Herndon, in [RailsRumble](http://www.railsrumble.com)!
+
+Check out our entry, Fish4Brains: [http://takemeaway.railsrumble.com](http://takemeaway.railsrumble.com) and [vote](http://vote.railsrumble.com/teams/takemeaway) for us!
+
+I'll have more details about this project, the underlying technologies, and stories from working on a 2-day project.
