@@ -1,0 +1,49 @@
+---
+layout: default
+title: doodle dabbles blog
+---
+
+{% include JB/setup %}
+<section class="content-blog">
+
+  {{ site.posts | debug }}
+  {% for post in paginator.posts %}
+    <article class="post type-post status-publish format-standard hentry category-uncategorized">
+      <h2 class="no-link">
+        <a href="{{ post.url }}" class="no-link" title="Permalink to {{ post.title }}" rel="bookmark">{{ post.title }}</a>
+      </h2>
+
+      <time class="entry-meta"> <i class="ball"></i> {{ post.time | date: "%b %d, %y" }} Oct 05th '11	</time>
+
+      <div class="entry-content">
+        {{ post.content }}
+      </div>
+    </article>
+  {% endfor %}
+
+</section>
+
+<nav id="nav-below" class="pagination">
+
+  {% if paginator.previous_page %}
+    <div class="older">
+        {% if paginator.previous_page == 1 %}
+          <a href="/"><span class="meta-nav">&larr;</span> Older Posts</a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}"><span class="meta-nav">&larr;</span> Older Posts</a>
+        {% endif %}
+    </div>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <div class="newer">
+        {% if paginator.next_page == 1 %}
+          <a href="/"><span class="meta-nav">&rarr;</span> Newer Posts</a>
+        {% else %}
+          <a href="{{ paginator.next_page_path }}"><span class="meta-nav">&rarr;</span> Newer Posts</a>
+        {% endif %}
+    </div>
+  {% endif %}
+
+</nav><!-- #nav-below -->
+
